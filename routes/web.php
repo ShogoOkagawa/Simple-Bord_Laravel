@@ -15,9 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::resouce('posts','PostController');
+Route::resource('posts', 'PostController');
 
-// AW9での開発の場合　HTTP接続でアセットを読み込みための処理
 // if (env('APP_ENV') === 'local') {
-//     URL::forceScheme('https');
+//    URL::forceScheme('https');
 // }
+
+// Route::get('/posts', 'PostController@index')->name('index');
+// Route::get('/posts/create', 'PostController@create')->name('create');
+// Route::post('/posts', 'PostController@store')->name('store');
+// Route::get('/posts/{id}', 'PostController@show')->name('show');
+// Route::get('/posts/{id}/edit', 'PostController@edit')->name('edit');
+// Route::put('/update/{id}', 'PostController@update')->name('update');
+// Route::delete('/delete/{id}', 'PostController@delete')->name('delete');
