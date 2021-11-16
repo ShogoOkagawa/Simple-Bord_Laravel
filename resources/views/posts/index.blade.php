@@ -4,9 +4,7 @@
 
 @section('content')
 
-@if (session('message'))
-  {{ session('message') }}
-@endif
+
 <div class="column">
   <h1>Posts</h1> 
   
